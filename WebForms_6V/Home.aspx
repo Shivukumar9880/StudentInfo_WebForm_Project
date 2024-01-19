@@ -109,12 +109,14 @@
             <td class="auto-style9">
                 <asp:Button ID="Button1" runat="server" Text="Login" BackColor="#99FF66" Width="100px" Font-Size="Large" OnClick="Button1_Click1" />
             &nbsp;
-                <asp:Button ID="Button2" runat="server" BorderColor="#3399FF" Font-Size="Medium" OnClick="Button2_Click" Text="Register" Width="86px" />
+                <asp:Button ID="Button2" runat="server" BorderColor="#3399FF" Font-Size="Medium" OnClick="Button2_Click" Text="Register" Width="86px" BackColor="#6666FF" />
             </td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
+            <td class="auto-style10">
+                <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Button" />
+            </td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
