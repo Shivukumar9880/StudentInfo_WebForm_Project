@@ -15,9 +15,9 @@
         </tr>
         <tr>
 
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Style="top: 135px;
+      <%--  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Style="top: 135px;
         left: 700px; position: absolute; height: 10px; width: 200px;color:red" ErrorMessage="RequiredFieldValidator"
-        ControlToValidate="TextBox2">StudentId Is Mandarory..!</asp:RequiredFieldValidator>
+        ControlToValidate="TextBox2">StudentId Is Mandarory..!</asp:RequiredFieldValidator>--%>
 
 
 
@@ -58,9 +58,9 @@
         </tr>
         <tr>
 
-             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Style="top: 170px;
+           <%--  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Style="top: 170px;
              left: 700px; position: absolute; height: 10px; width: 400px;color:red" ErrorMessage="RequiredFieldValidator"
-             ControlToValidate="TextBox3">StudentName Is Mandarory..!</asp:RequiredFieldValidator>
+             ControlToValidate="TextBox3">StudentName Is Mandarory..!</asp:RequiredFieldValidator>--%>
 
             <td style="height: 24px; width: 238px">
                 <asp:Label ID="Label2" runat="server" Font-Size="Medium" Text="Student Name"></asp:Label>
@@ -81,11 +81,11 @@
         </tr>
         <tr>
 
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Style="top: 230px;
+        <%--    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Style="top: 230px;
                 left: 550px; position: absolute; height: 22px; width: 400px;color:red"
                 ErrorMessage="RegularExpressionValidator" ControlToValidate="TextBox5"
               ValidationExpression="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">Email is Not Valid</asp:RegularExpressionValidator>
-
+--%>
 
           <%--   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Style="top: 230px;
              left: 550px; position: absolute; height: 10px; width: 400px;color:red" ErrorMessage="RequiredFieldValidator"
@@ -102,9 +102,9 @@
 
 
             
-             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Style="top: 260px;
+       <%--      <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Style="top: 260px;
              left: 550px; position: absolute; height: 10px; width: 400px;color:red" ErrorMessage="RequiredFieldValidator"
-             ControlToValidate="TextBox3">Branch Is Mandarory..!</asp:RequiredFieldValidator>
+             ControlToValidate="TextBox3">Branch Is Mandarory..!</asp:RequiredFieldValidator>--%>
             <td style="width: 238px; height: 35px;">
                 <asp:Label ID="Label5" runat="server" Font-Size="Medium" Text="Brach"></asp:Label>
             </td>
@@ -137,7 +137,7 @@
             <td style="width: 238px; height: 24px">
                 <asp:Label ID="Label7" runat="server" Font-Size="Medium" Text="Image"></asp:Label>
             </td>
-            <td style="height: 24px">&nbsp;<asp:FileUpload ID="FileUpload1" runat="server" Width="300px" />
+            <td style="height: 24px"><asp:FileUpload ID="FileUpload1" runat="server" Width="300px" />
             </td>
         </tr>
         <tr>
@@ -147,8 +147,6 @@
         <tr>
             <td style="width: 238px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" BackColor="#333399" Font-Size="Medium" ForeColor="White" OnClick="Button1_Click" Text="Register" />
-            &nbsp;
                 <asp:Button ID="Button2" runat="server" BackColor="#333399" Font-Size="Medium" ForeColor="White" OnClick="Button2_Click" Text="Update" />
             &nbsp;
                 <asp:Button ID="Button3" runat="server" BackColor="#CC3300" Font-Size="Medium" ForeColor="White" OnClick="Button3_Click" Text="Delete" OnClientClick="return confirm('Are You Sure To Delete?');" />
