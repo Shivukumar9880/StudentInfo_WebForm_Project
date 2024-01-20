@@ -283,5 +283,24 @@ namespace WebForms_6V
         {
             Response.Redirect("GetAll.aspx");
         }
+
+        protected void GetName_Click(object sender, EventArgs e)
+        {
+
+            String letter = TextBox7.Text;
+
+            String query="select * from Student where StudentName like '"+ letter + "%'";
+
+           // SqlCommand cmd = new SqlCommand(" exec SearchStudentByStartLetter '" + letter + "'", SqlConnection);
+            SqlCommand cmd = new SqlCommand(query, SqlConnection);
+
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
     }
 }

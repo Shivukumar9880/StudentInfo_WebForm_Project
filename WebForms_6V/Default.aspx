@@ -54,6 +54,7 @@
                 <asp:TextBox ID="TextBox2" runat="server" Font-Size="Medium" Width="200px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Button4" runat="server" BackColor="#00CC99" Font-Size="Medium" ForeColor="#FF0066" OnClick="Button4_Click" Text="Search" Width="120px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
         </tr>
         <tr>
@@ -138,6 +139,14 @@
                 <asp:Label ID="Label7" runat="server" Font-Size="Medium" Text="Image"></asp:Label>
             </td>
             <td style="height: 24px"><asp:FileUpload ID="FileUpload1" runat="server" Width="300px" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 238px; height: 24px">Search By Start Letter</td>
+            <td style="height: 24px">
+                <asp:TextBox ID="TextBox7" runat="server" Font-Size="Medium" Width="200px"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button8" runat="server" BackColor="#00CC99" Font-Size="Medium" ForeColor="#FF0066" OnClick="GetName_Click" Text="Search" Width="120px" />
             </td>
         </tr>
         <tr>
